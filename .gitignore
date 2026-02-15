@@ -1,0 +1,12 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.log
+tmp/
+
+# App data
+.gemini/
+.agent/
+brain/

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklancia – Elevate Your Reading Experience</title>
+    <meta name="description"
+        content="A magical digital library for mastering English through the power of storytelling.">
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dynamic-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="floating-symbols">
+        <div class="symbol symbol-book">📖</div>
+        <div class="symbol symbol-star">✨</div>
+        <div class="symbol symbol-book-alt">📚</div>
+        <div class="symbol symbol-light">💡</div>
+    </div>
+
+    <header class="header">
+        <nav class="container nav">
+            <div class="logo">Booklancia</div>
+            <div class="nav-cta">
+                <a href="#cta" class="btn-link">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text reveal">
+                    <span class="eyebrow">Magical Digital Library</span>
+                    <h1 class="title">Discover Stories.<br><span class="accent">Master English.</span></h1>
+                    <p class="subtitle">Step into a world where stories come alive. Master English vocabulary and
+                        structure naturally through an immersive reading journey.</p>
+                    <div class="hero-btns">
+                        <a href="https://play.google.com/store/apps" class="play-store-btn">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                alt="Get it on Google Play">
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="phone-frame-luxury">
+                        <div class="phone-inner">
+                            <img src="assets/screen_stories.png" alt="Booklancia App Stories" class="app-screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features container">
+            <div class="section-title-wrap reveal">
+                <h2 class="section-title">Designed for Mastery</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card-minimal reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Interactive Narratives</h3>
+                    <p>Experience branching stories where your choices influence the outcome and your learning progress.
+                    </p>
+                </div>
+                <div class="feature-card-minimal reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Contextual Quizzes</h3>
+                    <p>Fun, non-intrusive checks that reinforce your vocabulary comprehension right after the story
+                        ends.</p>
+                </div>
+                <div class="feature-card-minimal reveal">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Curated Levels</h3>
+                    <p>From absolute beginners to advanced speakers, we provide content tailored for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section class="screenshots-luxury container">
+            <div class="section-title-wrap reveal">
+                <h2 class="section-title">A Closer Look</h2>
+            </div>
+            <div class="screenshots-grid-parallax">
+                <div class="screenshot-float reveal style-left">
+                    <div class="phone-frame-mini">
+                        <img src="assets/screen_words.png" alt="Booklancia App Words" class="app-screenshot">
+                    </div>
+                </div>
+                <div class="screenshot-float reveal style-center">
+                    <div class="phone-frame-mini large">
+                        <img src="assets/screen_stories.png" alt="Booklancia App Stories" class="app-screenshot">
+                    </div>
+                </div>
+                <div class="screenshot-float reveal style-right">
+                    <div class="phone-frame-mini">
+                        <img src="assets/screen_read.png" alt="Booklancia App Reading" class="app-screenshot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials removed as requested -->
+
+        <!-- Final CTA -->
+        <section id="cta" class="final-cta-luxury">
+            <div class="container cta-inner reveal">
+                <h2 class="title">Start Your Reading Journey Today</h2>
+                <div class="hero-btns center">
+                    <a href="https://play.google.com/store/apps" class="play-store-btn">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            alt="Get it on Google Play">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-wrap">
+            <div class="footer-brand">Booklancia</div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <span class="social-icon">IG</span>
+                <span class="social-icon">TW</span>
+                <span class="social-icon">FB</span>
+            </div>
+            <p class="copyright">Copyright © 2026 Booklancia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
