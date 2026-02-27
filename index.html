@@ -1,218 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Title & Description (SEO) -->
-  <title>Booklancia | İngilizce Hikaye Okuma Uygulaması</title>
-   <link rel="canonical" href="https://www.booklancia.com/privacy" />
-  <meta
-    name="description"
-    content="Booklancia, sürükleyici hikayeler aracılığıyla kelime dağarcığınızı, okuma becerilerinizi ve akıcılığınızı geliştirmenize yardımcı olan bir İngilizce hikaye okuma uygulamasıdır."
-  />
+    <!-- Title & Description (SEO) -->
+    <title>Booklancia | İngilizce Hikaye Okuma Uygulaması</title>
+    <link rel="canonical" href="https://www.booklancia.com/privacy" />
+    <meta
+      name="description"
+      content="Booklancia, sürükleyici hikayeler aracılığıyla kelime dağarcığınızı, okuma becerilerinizi ve akıcılığınızı geliştirmenize yardımcı olan bir İngilizce hikaye okuma uygulamasıdır."
+    />
 
-  <!-- Robots -->
-  <meta name="robots" content="index, follow" />
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.booklancia.com/" />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.booklancia.com/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Booklancia | İngilizce Hikaye Okuma Uygulaması" />
-  <meta
-    property="og:description"
-    content="Hikayelerle İngilizcenizi geliştirin. Sürükleyici okuma deneyimleriyle kelime dağarcığınızı ve akıcılığınızı artırın."
-  />
-  <meta property="og:url" content="https://www.booklancia.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.booklancia.com/assets/icons/favicon.png" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Booklancia | İngilizce Hikaye Okuma Uygulaması"
+    />
+    <meta
+      property="og:description"
+      content="Hikayelerle İngilizcenizi geliştirin. Sürükleyici okuma deneyimleriyle kelime dağarcığınızı ve akıcılığınızı artırın."
+    />
+    <meta property="og:url" content="https://www.booklancia.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.booklancia.com/assets/icons/favicon.png"
+    />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Booklancia | İngilizce Hikaye Okuma Uygulaması" />
-  <meta
-    name="twitter:description"
-    content="Hikayelerle İngilizcenizi geliştirin. Sürükleyici okuma deneyimleriyle kelime dağarcığınızı ve akıcılığınızı artırın."
-  />
-  <meta name="twitter:image" content="https://www.booklancia.com/assets/icons/favicon.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Booklancia | İngilizce Hikaye Okuma Uygulaması"
+    />
+    <meta
+      name="twitter:description"
+      content="Hikayelerle İngilizcenizi geliştirin. Sürükleyici okuma deneyimleriyle kelime dağarcığınızı ve akıcılığınızı artırın."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.booklancia.com/assets/icons/favicon.png"
+    />
 
-  <!-- Premium Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="dynamic-bg">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
     </div>
     <canvas id="particle-canvas"></canvas>
 
     <div class="floating-symbols">
-        <div class="symbol symbol-book">📖</div>
-        <div class="symbol symbol-star">✨</div>
-        <div class="symbol symbol-book-alt">📚</div>
-        <div class="symbol symbol-light">💡</div>
+      <div class="symbol symbol-book">📖</div>
+      <div class="symbol symbol-star">✨</div>
+      <div class="symbol symbol-book-alt">📚</div>
+      <div class="symbol symbol-light">💡</div>
     </div>
 
     <header class="header">
-        <nav class="container nav">
-            <div class="logo">Booklancia</div>
-            <div class="nav-cta">
-                <a href="#cta" class="btn-link">İndir</a>
-            </div>
-        </nav>
+      <nav class="container nav">
+        <div class="logo">Booklancia</div>
+        <div class="nav-cta">
+          <a href="#cta" class="btn-link">İndir</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-grid">
-                <div class="hero-text reveal">
-                    <span class="eyebrow">Büyülü Dijital Kütüphane</span>
-                    <h1 class="title">Hikayeleri Keşfedin.<br><span class="accent">İngilizcede Uzmanlaşın.</span></h1>
-                    <p class="subtitle">Hikayelerin hayat bulduğu bir dünyaya adım atın. Sürükleyici bir okuma yolculuğuyla İngilizce kelime dağarcığınızı ve yapısını doğal bir şekilde geliştirin.</p>
-                    <div class="hero-btns" style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
-                        <a href="#" onclick="event.preventDefault(); alert('Yakında yayında!');" class="play-store-btn">
-                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png"
-                                alt="Google Play'den Alın" style="height: 60px; object-fit: contain;">
-                        </a>
-                        <a href="https://apps.apple.com/tr/app/booklancia/id6759535485?l=tr" target="_blank" class="app-store-btn">
-                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                                alt="App Store'dan İndirin" style="height: 42px; object-fit: contain;">
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual reveal">
-                    <div class="phone-frame-luxury">
-                        <div class="phone-inner">
-                            <img src="assets/screen_stories.png" alt="Booklancia Uygulaması Hikayeler" class="app-screenshot">
-                        </div>
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text reveal">
+            <span class="eyebrow">Büyülü Dijital Kütüphane</span>
+            <h1 class="title">
+              Hikayeleri Keşfedin.<br /><span class="accent"
+                >İngilizcede Uzmanlaşın.</span
+              >
+            </h1>
+            <p class="subtitle">
+              Hikayelerin hayat bulduğu bir dünyaya adım atın. Sürükleyici bir
+              okuma yolculuğuyla İngilizce kelime dağarcığınızı ve yapısını
+              doğal bir şekilde geliştirin.
+            </p>
+            <div
+              class="hero-btns"
+              style="
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                flex-wrap: wrap;
+              "
+            >
+              <a
+                href="#"
+                onclick="
+                  event.preventDefault();
+                  alert('Yakında yayında!');
+                "
+                class="play-store-btn"
+              >
+                <img
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  alt="Get it on Google Play"
+                  style="height: 60px; object-fit: contain"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/tr/app/booklancia/id6759535485?l=tr"
+                target="_blank"
+                class="app-store-btn"
+              >
+                <img
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+                  alt="Download on the App Store"
+                  style="height: 44px; object-fit: contain"
+                />
+              </a>
             </div>
-        </section>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="phone-frame-luxury">
+              <div class="phone-inner">
+                <img
+                  src="assets/screen_stories.png"
+                  alt="Booklancia Uygulaması Hikayeler"
+                  class="app-screenshot"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Features Section -->
-        <section id="features" class="features container">
-            <div class="section-title-wrap reveal">
-                <h2 class="section-title">Ustalık İçin Tasarlandı</h2>
+      <!-- Features Section -->
+      <section id="features" class="features container">
+        <div class="section-title-wrap reveal">
+          <h2 class="section-title">Ustalık İçin Tasarlandı</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card-minimal reveal">
+            <div class="card-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                ></path>
+              </svg>
             </div>
-            <div class="features-grid">
-                <div class="feature-card-minimal reveal">
-                    <div class="card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                        </svg>
-                    </div>
-                    <h3>İnteraktif Hikayeler</h3>
-                    <p>Seçimlerinizin, hikayenin sonucunu ve öğrenme sürecinizi etkilediği dallanan hikayeleri deneyimleyin.
-                    </p>
-                </div>
-                <div class="feature-card-minimal reveal">
-                    <div class="card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Bağlamsal Testler</h3>
-                    <p>Hikaye biter bitmez kelime dağarcığınızı pekiştiren, eğlenceli ve akışı bozmayan mini testler.</p>
-                </div>
-                <div class="feature-card-minimal reveal">
-                    <div class="card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path
-                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3>Özenle Hazırlanmış Seviyeler</h3>
-                    <p>Yeni başlayanlardan ileri seviyeye kadar, herkesin ihtiyacına uygun içerikler sunuyoruz.</p>
-                </div>
+            <h3>İnteraktif Hikayeler</h3>
+            <p>
+              Seçimlerinizin, hikayenin sonucunu ve öğrenme sürecinizi
+              etkilediği dallanan hikayeleri deneyimleyin.
+            </p>
+          </div>
+          <div class="feature-card-minimal reveal">
+            <div class="card-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
             </div>
-        </section>
+            <h3>Bağlamsal Testler</h3>
+            <p>
+              Hikaye biter bitmez kelime dağarcığınızı pekiştiren, eğlenceli ve
+              akışı bozmayan mini testler.
+            </p>
+          </div>
+          <div class="feature-card-minimal reveal">
+            <div class="card-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+            </div>
+            <h3>Özenle Hazırlanmış Seviyeler</h3>
+            <p>
+              Yeni başlayanlardan ileri seviyeye kadar, herkesin ihtiyacına
+              uygun içerikler sunuyoruz.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Screenshots Section -->
-        <section class="screenshots-luxury container">
-            <div class="section-title-wrap reveal">
-                <h2 class="section-title">Yakından Bakış</h2>
+      <!-- Screenshots Section -->
+      <section class="screenshots-luxury container">
+        <div class="section-title-wrap reveal">
+          <h2 class="section-title">Yakından Bakış</h2>
+        </div>
+        <div class="screenshots-grid-parallax">
+          <div class="screenshot-float reveal style-left">
+            <div class="phone-frame-mini">
+              <img
+                src="assets/screen_words.png"
+                alt="Booklancia Uygulaması Kelimeler"
+                class="app-screenshot"
+              />
             </div>
-            <div class="screenshots-grid-parallax">
-                <div class="screenshot-float reveal style-left">
-                    <div class="phone-frame-mini">
-                        <img src="assets/screen_words.png" alt="Booklancia Uygulaması Kelimeler" class="app-screenshot">
-                    </div>
-                </div>
-                <div class="screenshot-float reveal style-center">
-                    <div class="phone-frame-mini large">
-                        <img src="assets/screen_stories.png" alt="Booklancia Uygulaması Hikayeler" class="app-screenshot">
-                    </div>
-                </div>
-                <div class="screenshot-float reveal style-right">
-                    <div class="phone-frame-mini">
-                        <img src="assets/screen_read.png" alt="Booklancia Uygulaması Okuma" class="app-screenshot">
-                    </div>
-                </div>
+          </div>
+          <div class="screenshot-float reveal style-center">
+            <div class="phone-frame-mini large">
+              <img
+                src="assets/screen_stories.png"
+                alt="Booklancia Uygulaması Hikayeler"
+                class="app-screenshot"
+              />
             </div>
-        </section>
+          </div>
+          <div class="screenshot-float reveal style-right">
+            <div class="phone-frame-mini">
+              <img
+                src="assets/screen_read.png"
+                alt="Booklancia Uygulaması Okuma"
+                class="app-screenshot"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Testimonials removed as requested -->
+      <!-- Testimonials removed as requested -->
 
-        <!-- Final CTA -->
-        <section id="cta" class="final-cta-luxury">
-            <div class="container cta-inner reveal">
-                <h2 class="title">Okuma Yolculuğunuza Bugün Başlayın</h2>
-                <div class="hero-btns center" style="display: flex; gap: 15px; align-items: center; justify-content: center; flex-wrap: wrap;">
-                    <a href="#" onclick="event.preventDefault(); alert('Yakında yayında!');" class="play-store-btn">
-                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png"
-                            alt="Google Play'den Alın" style="height: 60px; object-fit: contain;">
-                    </a>
-                    <a href="https://apps.apple.com/tr/app/booklancia/id6759535485?l=tr" target="_blank" class="app-store-btn">
-                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                            alt="App Store'dan İndirin" style="height: 42px; object-fit: contain;">
-                    </a>
-                </div>
-            </div>
-        </section>
+      <!-- Final CTA -->
+      <section id="cta" class="final-cta-luxury">
+        <div class="container cta-inner reveal">
+          <h2 class="title">Okuma Yolculuğunuza Bugün Başlayın</h2>
+          <div
+            class="hero-btns center"
+            style="
+              display: flex;
+              gap: 15px;
+              align-items: center;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a
+              href="#"
+              onclick="
+                event.preventDefault();
+                alert('Yakında yayında!');
+              "
+              class="play-store-btn"
+            >
+              <img
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Get it on Google Play"
+                style="height: 60px; object-fit: contain"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/tr/app/booklancia/id6759535485?l=tr"
+              target="_blank"
+              class="app-store-btn"
+            >
+              <img
+                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+                alt="Download on the App Store"
+                style="height: 60px; object-fit: contain"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-wrap">
-            <div class="footer-brand">Booklancia</div>
-            <div class="footer-links">
-                <a href="#">Gizlilik Politikası</a>
-                <a href="#">Kullanım Koşulları</a>
-                <a href="#">İletişim</a>
-            </div>
-            <div class="footer-socials">
-                <span class="social-icon">IG</span>
-                <span class="social-icon">TW</span>
-                <span class="social-icon">FB</span>
-            </div>
-            <p class="copyright">Telif Hakkı © 2026 Booklancia. Tüm hakları saklıdır.</p>
+      <div class="container footer-wrap">
+        <div class="footer-brand">Booklancia</div>
+        <div class="footer-links">
+          <a href="#">Gizlilik Politikası</a>
+          <a href="#">Kullanım Koşulları</a>
+          <a href="#">İletişim</a>
         </div>
+        <div class="footer-socials">
+          <span class="social-icon">IG</span>
+          <span class="social-icon">TW</span>
+          <span class="social-icon">FB</span>
+        </div>
+        <p class="copyright">
+          Telif Hakkı © 2026 Booklancia. Tüm hakları saklıdır.
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
